@@ -15,9 +15,8 @@ An excel spreadsheet that shows the rules and the related test cases.  The exce
 3.  Rule Description: This provides a description of what the rule is testing
 4.  Primary Element: The primary element is provided to give the reader an idea of the element that is being tested.  If more than one element is tested in a rule, such as comparing two values only one of the elements is entered into this field.
 5.  TestCase: This field is the test case identifier.  There may be multiple test cases associated with a given rule and there may also be multiple rules associated with a given test case. The name of this column corresponds to the folder containing the test case.
-6.  Location: This shows the location of the instance entry point for the test case.
-7.  t=error: If a testcase defines a pass condition this will have a value of false.  If the test case returns an error condition this field will have a value of true.
-8.  Test_Case_Description: This describes what the test case is testing for.
+6.  t=error: If a testcase defines a pass condition this will have a value of false.  If the test case returns an error condition this field will have a value of true.
+7.  Test_Case_Description: This describes what the test case is testing for.
 
 In addition to the excel spreadsheet, there are a number of directories that contain the individual test cases.  To open a test case the user should open the xml instance file in the folder that is not a linkbase. A listing of the entry points is in included in the excel spreadsheet.  To open these files the user will need to use a standard XBRL processor.
 
