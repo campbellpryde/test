@@ -1,4 +1,2 @@
 # test
-test-description when publishing
-
-This is a readme file
+About the Public Exposure of Guidance and Validation Rules
