@@ -56,15 +56,15 @@ To run the test cases using Arelle:
 *   Unzip the files into the directory {PATH TO TESTCASE}/DQC_Testcases
 *   Create the following bash file “runDQCTests.sh” using the UNIX editor of your choice.
 
-\#!/bin/bash
+>>> \#!/bin/bash
 
-TESTCASESROOT={PATH TO TESTCASE}/DQC_Testcases" OUTPUTLOGFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-log.txt OUTPUTERRFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-err.txt OUTPUTCSVFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-report.csv TESTCASESINDEXFILE="$TESTCASESROOT/index.xml" ARELLEDIR={PATH TO WHERE ARELLE IS}
+>>> TESTCASESROOT={PATH TO TESTCASE}/DQC_Testcases" OUTPUTLOGFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-log.txt OUTPUTERRFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-err.txt OUTPUTCSVFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-report.csv TESTCASESINDEXFILE="$TESTCASESROOT/index.xml" ARELLEDIR={PATH TO WHERE ARELLE IS}
 
-rm $OUTPUTLOGFILE $OUTPUTERRFILE
+>>> rm $OUTPUTLOGFILE $OUTPUTERRFILE
 
-PYTHONPATH=$ARELLEDIR^M
+>>> PYTHONPATH=$ARELLEDIR^M
 
-python3.4 -m arelle.CntlrCmdLine --file "$TESTCASESINDEXFILE" --validate --plugins "validate/DQC" --csvTestReport "$OUTPUTCSVFILE"  --logFile "$OUTPUTLOGFILE" 2>  "$OUTPUTERRFILE"
+>>> python3.4 -m arelle.CntlrCmdLine --file "$TESTCASESINDEXFILE" --validate --plugins "validate/DQC" --csvTestReport "$OUTPUTCSVFILE"  --logFile "$OUTPUTLOGFILE" 2>  "$OUTPUTERRFILE"
 
 *   Run the bash file nohup scripts/runDQCTests.sh > log/nohup.out &
 
