@@ -56,7 +56,7 @@ To run the test cases using Arelle:
 *   Unzip the files into the directory {PATH TO TESTCASE}/DQC_Testcases
 *   Create the following bash file “runDQCTests.sh” using the UNIX editor of your choice.
 
-#!/bin/bash
+\#!/bin/bash
 
 TESTCASESROOT={PATH TO TESTCASE}/DQC_Testcases" OUTPUTLOGFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-log.txt OUTPUTERRFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-err.txt OUTPUTCSVFILE={PATH TO WHERE OUTPUT SHOULD GO}/DQC-report.csv TESTCASESINDEXFILE="$TESTCASESROOT/index.xml" ARELLEDIR={PATH TO WHERE ARELLE IS}
 
